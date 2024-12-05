@@ -51,13 +51,7 @@ random_products = df_products.head(n=10)
 
 # Tạo menu
 menu = ["Thông kê", "Đề xuất sản phẩm"]
-# Hiển thị tiêu đề to hơn bằng Markdown
-# st.sidebar.markdown("### <span style='font-size:20px;'>Lựa chọn</span>", unsafe_allow_html=True)
-
-# Hiển thị selectbox
-# choice = st.sidebar.selectbox("", menu)
-# menu = ["Thông kê", "Đề xuất sản phẩm"]
-choice = st.sidebar.selectbox("**Nguyễn Văn Thông**", menu)
+choice = st.sidebar.selectbox("**Lựa chọn**", menu)
 
 # Giáo viên hướng dẫn:
 st.sidebar.write("""#### Giảng viên hướng dẫn:
@@ -154,4 +148,6 @@ elif choice == 'Thông kê':
 
 
 # streamlit run content_based_app.py
+
+# group11-recommender-system
 
